@@ -1,0 +1,1649 @@
+@use './color';
+
+// Dark Theme Start
+.dark {
+    .theme-bg {
+        background-color: color.$dark;
+    }
+
+    .wrapper::before {
+        content: url(../../images/svgs/banner.svg)
+    }
+
+    .content {
+        background-color: rgb(0 0 0 / 25%);
+    }
+
+    .app-wrapper {
+        .pending-task-chart-parent {
+            h1 {
+                color: color.$light;
+            }
+
+            p {
+                color: color.$light;
+            }
+        }
+
+        .weekly-div1 h1,
+        .monthly-div h1 {
+            color: color.$light;
+        }
+
+        .monthly-chart-parent h1 {
+            color: color.$light;
+        }
+
+        .timeline-div {
+            background: color.$black;
+        }
+
+        .home-div1:not(.first-div, .recentProjects-parent) {
+            background-color: color.$black;
+
+        }
+
+        .home-div2,
+        .home-div3 {
+            background-color: color.$black;
+        }
+
+        .add-emp-btn {
+            border: 2px solid (color.$light);
+            background-color: transparent;
+            color: color.$light;
+        }
+
+        .h1 {
+            color: color.$light;
+        }
+
+        .p,
+        .p2 {
+            color: color.$light;
+        }
+
+        .chart-p {
+            color: color.$light;
+        }
+
+
+
+        .products-charts-child1:nth-child(1):after {
+            background: color.$dark;
+        }
+
+        .products-charts-child1:nth-child(2) {
+            & :after {
+                background: color.$dark;
+            }
+        }
+
+        .products-charts-child1:nth-child(4) {
+            & :after {
+                background: color.$dark;
+            }
+        }
+
+        .products-charts-child1:nth-child(5) {
+
+            & :after {
+                background: color.$dark;
+            }
+        }
+
+        .products-charts-child2 {
+            background-color: color.$dark;
+        }
+
+        .products-charts-child3 {
+            background-color: color.$dark;
+        }
+
+
+        .responsive-table {
+            thead {
+                tr {
+                    color: color.$light;
+                }
+            }
+
+            tbody {
+                tr {
+                    color: color.$light;
+                    border: 1px solid (color.$light-green-3);
+                    background-color: color.$black;
+                }
+            }
+
+        }
+
+        .recent-activity-table {
+            tr {
+                color: color.$dark;
+            }
+
+            thead {
+                tr {
+                    color: color.$light;
+                }
+            }
+
+            tbody {
+                tr {
+                    background: color.$dark;
+
+                    .activity-img {
+                        background: color.$black;
+                    }
+                }
+            }
+
+            & p {
+
+                &:nth-child(1) {
+                    color: color.$light;
+
+                }
+
+                &:nth-child(2) {
+                    color: color.$light;
+
+                }
+            }
+        }
+
+        button.seeAll-btn {
+            color: color.$white-2;
+            background: color.$blue;
+        }
+
+        .add-proj-btn {
+            color: color.$light;
+
+            span.anticon.anticon-plus {
+
+                background: (color.$light) 0% 0% no-repeat padding-box;
+                box-shadow: 1px 2px 5px (color.$light);
+                color: color.$dark;
+            }
+        }
+
+        // Customer Inner Body Start
+        .InnerBodyContent {
+            background: transparent;
+            box-shadow: 0px 3px 25px color.$trans-black-2;
+            border: 1px solid color.$trans-gray;
+
+            .customers-parent-div {
+
+                .customers {
+
+                    .ant-progress-inner {
+                        background-color: color.$lighht-gray;
+
+                    }
+
+                    background: color.$black;
+                    box-shadow: -9px 15px 19px color.$trans-black;
+                    border: 1px solid color.$light-gray-2;
+
+
+
+
+                    & p {
+
+                        color: color.$light;
+
+                    }
+                }
+            }
+        }
+
+        // Customer Inner Body End
+
+        // Antd Table Styling Start
+        .ant-table {
+            background-color: transparent;
+        }
+
+        .ant-table-thead>tr {
+            th {
+                color: color.$light;
+            }
+        }
+
+        .ant-table-tbody>tr {
+
+            td {
+                color: color.$light;
+                background: color.$black;
+                border-block: 1px solid color.$dark;
+            }
+
+            td:first-child {
+                border-left: 1px solid color.$dark;
+
+            }
+
+            td:last-child {
+                border-right: 1px solid color.$dark;
+
+            }
+        }
+
+        // Antd Table Styling End
+
+        // project Info Styling Start
+        .projectInfoBody {
+            background: color.$black;
+            box-shadow: 0px 3px 25px color.$trans-black-2;
+            border: 1px solid color.$trans-gray;
+
+            .projectInfoLeftSection {
+
+                & h1 {
+                    color: color.$light;
+                }
+
+
+                .projectName {
+                    border-bottom: 1px solid color.$gray-2;
+
+                    & h1 {
+                        color: color.$light;
+                    }
+
+                    & p {
+                        color: color.$gary-p;
+                    }
+
+                }
+
+                .projectDetails {
+
+                    & tr {
+                        & td:first-child {
+                            color: color.$light;
+                        }
+
+                        & td:last-child {
+                            color: color.$light;
+
+                            & span {
+                                color: color.$dark-green-2;
+                            }
+                        }
+                    }
+                }
+
+                .ant-progress-circle .ant-progress-text {
+                    color: color.$light;
+                }
+
+                .projectMembers {
+                    & p {
+                        color: color.$light-purple-3;
+                    }
+
+                    .member-title {
+                        & p {
+                            color: color.$light;
+                        }
+                    }
+
+                    span.anticon.anticon-plus {
+                        color: color.$light;
+                    }
+                }
+            }
+
+            .projectInfoRightSection {
+                background: color.$dark;
+            }
+
+        }
+
+        // project Info Styling End
+
+
+        // Ant Design Tabs Start
+        .card-container>.ant-tabs-card .ant-tabs-content>.ant-tabs-tabpane {
+            background: color.$black;
+        }
+
+        .card-container>.ant-tabs-card .ant-tabs-tab-active,
+        [data-theme='compact'] .card-container>.ant-tabs-card .ant-tabs-tab-active {
+            background: color.$black;
+            border-color: color.$black;
+        }
+
+        #components-tabs-demo-card-top .code-box-demo {
+            background: color.$white-5;
+        }
+
+        [data-theme='dark'] #components-tabs-demo-card-top .code-box-demo {
+            background: color.$light;
+        }
+
+        [data-theme='dark'] .card-container>.ant-tabs-card .ant-tabs-content>.ant-tabs-tabpane {
+            background: color.$light;
+        }
+
+        [data-theme='dark'] .card-container>.ant-tabs-card .ant-tabs-tab-active {
+            background: color.$light;
+            border-color: color.$light;
+        }
+
+        .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+            color: color.$light;
+            border-bottom: 3px solid color.$light-blue-2;
+        }
+
+        .ant-tabs-tab-btn,
+        .ant-tabs-tab-remove {
+            color: color.$light;
+        }
+
+        // Ant Design Tabs End
+
+        // Profile Info start
+        .profileInfo {
+            .profileInfo-content {
+                & h1 {
+                    color: color.$light;
+                }
+
+                & p {
+                    color: color.$light;
+                }
+            }
+        }
+
+        // Profile Info end
+
+        // Customer Profile Page
+        .customerProfile {
+
+            .customerRating {
+                & p:first-child {
+                    color: color.$light;
+                }
+            }
+        }
+
+        // Customer Profile Page
+    }
+
+    // Ant design Modal Styling
+    .ant-modal-close {
+        color: color.$light;
+    }
+
+    .ant-modal-body {
+        background: color.$black;
+    }
+
+    .ant-modal-close:focus,
+    .ant-modal-close:hover {
+        color: color.$light;
+    }
+
+    .ModalBody {
+
+        .ModalLeftSec {
+            background: transparent;
+            border: 1px solid color.$trans-gray-2;
+
+            & h1 {
+                color: color.$light;
+            }
+
+            .projectName {
+                border-bottom: 1px solid color.$light;
+
+                & h1 {
+                    color: color.$blue-2;
+                }
+
+                & p {
+                    color: color.$light;
+                }
+
+            }
+
+            .projectDetails {
+
+                & tr {
+                    & td:first-child {
+                        color: color.$light;
+                    }
+
+                    & td:last-child {
+                        color: color.$gary-p;
+
+                        & span {
+                            color: color.$red;
+                        }
+                    }
+                }
+            }
+
+            .projectMembers {
+
+                & p {
+                    color: color.$light-purple-3;
+                }
+
+                .member-title {
+                    span.anticon.anticon-plus {
+                        color: color.$light;
+                    }
+
+                    & p {
+                        color: color.$light;
+                    }
+                }
+            }
+        }
+
+        .ModalMiddleSec {
+            & h1 {
+                color: color.$light;
+            }
+
+            .FilesDownloadSec {
+                border-top: 1px solid color.$light;
+            }
+
+            .imgFormatSec {
+                .format {
+
+                    .formatContent p:last-child {
+                        color: color.$light;
+                    }
+                }
+            }
+
+        }
+
+        .ModalRightSec {
+            background: transparent;
+            border: 1px solid color.$trans-gray-2;
+
+            .todo {
+                ul {
+                    & p {
+                        color: color.$light;
+                        ;
+                    }
+
+                    & span {
+                        color: color.$light;
+                        ;
+                    }
+                }
+            }
+        }
+    }
+
+    .InvoiceModalBody {
+
+        .ModalLeftSec {
+            background: transparent;
+            border: 1px solid color.$trans-gray-2;
+
+            & h1 {
+                color: color.$light;
+            }
+
+            .projectName {
+                border-bottom: 1px solid color.$light;
+
+                & h1 {
+                    color: color.$blue-2;
+                }
+
+                & p {
+                    color: color.$light;
+                }
+
+            }
+
+            .projectDetails {
+
+                & tr {
+                    & td:first-child {
+                        color: color.$light;
+                    }
+
+                    & td:last-child {
+                        color: color.$gary-p;
+
+                        & span {
+                            color: color.$red;
+                        }
+                    }
+                }
+            }
+            .InvoiceOptions {
+                .InvoiceOptionsChild {
+                    background: color.$light;
+                    box-shadow: 0px 3px 6px color.$trans-black-2;
+                }
+                & span {
+                   color: color.$light;
+                }
+            }
+        }
+
+        .ModalMiddleSec {
+            & h1 {
+                color: color.$light;
+            }
+            .projectDetails {
+                thead{
+                    background-color: color.$light-blue-5;
+                    color: color.$light;
+                }
+                tbody{
+                    tr{
+                        td{
+                            color: color.$light;
+                        }
+                    }
+                  
+                }
+            }
+            ul{
+                li{
+                    border-bottom: 0.15px solid color.$light;
+                    p{
+                        color: color.$light;
+                    }
+                }
+                li:nth-child(2){
+                    p{
+                        color: color.$dark-green-3;
+                    }
+    
+                }
+                li:nth-child(4){
+                    p{
+                        color: color.$red-2;
+                    }
+    
+                }
+            }
+        }
+
+    }
+
+    // Ant design Modal Styling
+
+}
+
+// Dark Theme End
+
+
+
+// Light Theme Start
+.light {
+    .theme-bg {
+        background-color: color.$dark;
+    }
+
+    .wrapper::before {
+        content: url(../../images/svgs/banner.svg)
+    }
+
+    .content {
+        background-color: color.$light;
+        background-image: url('../../images/svgs/Background.svg');
+    }
+
+    .app-wrapper {
+
+        .weekly-div1 h1,
+        .monthly-div {
+            & h1 {
+                color: color.$dark;
+            }
+
+        }
+
+        .monthly-chart-parent h1 {
+            color: color.$dark;
+        }
+
+        .pending-task-chart-parent {
+            h1 {
+                color: color.$dark;
+            }
+
+            p {
+                color: color.$gary-p;
+            }
+        }
+
+        .timeline-div {
+            background: color.$light;
+        }
+
+        .home-div1:not(.first-div, .recentProjects-parent) {
+            background-color: color.$light;
+
+        }
+
+        .home-div2,
+        .home-div3 {
+            background-color: color.$light;
+        }
+
+        .add-emp-btn {
+            border: 2px solid (color.$gray-border);
+            background-color: color.$light;
+            color: color.$gray-btn;
+        }
+
+        .h1 {
+            color: color.$black;
+        }
+
+        .p,
+        .p2 {
+            color: color.$gary-p;
+        }
+
+        .chart-p {
+            color: color.$gary-p;
+        }
+
+
+
+        .products-charts-child1:nth-child(1):after {
+            background: color.$white-50;
+        }
+
+        .products-charts-child1:nth-child(2) {
+            & :after {
+                background: color.$white-50;
+            }
+        }
+
+        .products-charts-child1:nth-child(4) {
+            & :after {
+                background: color.$white-50;
+            }
+        }
+
+        .products-charts-child1:nth-child(5) {
+            border: .5px solid (color.$light-purple);
+
+            .products-charts-child2 {
+                border: 3px solid (color.$light-purple);
+            }
+
+            .products-charts-child3 {
+                border: .5px solid (color.$light-purple);
+
+                & h1 {
+                    color: color.$light-purple;
+                }
+            }
+
+            & :after {
+                background: color.$white-50;
+            }
+        }
+
+
+        .products-charts-child3 {
+            border: .5px solid (color.$light-purple-2);
+            background-color: color.$light;
+        }
+
+
+        .responsive-table {
+            thead {
+                tr {
+                    color: color.$dark;
+                }
+            }
+
+            tbody {
+                tr {
+                    color: color.$black;
+                    border: 1px solid (color.$light-green-3);
+                    background-color: color.$light;
+                }
+            }
+
+        }
+
+
+        .recent-activity-table {
+            tr {
+                color: color.$gray-btn;
+            }
+
+            tbody {
+                tr {
+                    background: color.$white-2;
+
+                    .activity-img {
+                        background: color.$light;
+                    }
+                }
+            }
+
+            & p {
+
+                &:nth-child(1) {
+                    color: color.$black;
+
+                }
+
+                &:nth-child(2) {
+                    color: color.$gray-p2;
+
+                }
+            }
+        }
+
+        button.seeAll-btn {
+            color: color.$blue;
+            background: color.$white-2;
+        }
+
+        .add-proj-btn {
+            color: color.$dark-purple;
+
+            span.anticon.anticon-plus {
+
+                background: (color.$dark-purple) 0% 0% no-repeat padding-box;
+                box-shadow: 1px 2px 5px (color.$dark-purple);
+                color: color.$light;
+            }
+        }
+
+        // Customer Inner Body Start
+        .InnerBodyContent {
+            background: color.$light;
+            box-shadow: 0px 3px 25px color.$trans-black-2;
+            border: 1px solid color.$trans-gray;
+
+            .customers-parent-div {
+
+                .customers {
+
+                    .ant-progress-inner {
+                        background-color: color.$lighht-gray;
+
+                    }
+
+                    background: color.$white-3;
+                    box-shadow: -9px 15px 19px color.$trans-black;
+                    border: 1px solid color.$light-gray-2;
+
+
+
+
+                    & p {
+
+                        color: color.$black;
+
+                    }
+                }
+            }
+        }
+
+        // Customer Inner Body End
+
+
+        // Antd Table Styling Start
+        .ant-table-thead>tr {
+            th {
+                color: color.$gray;
+            }
+        }
+
+        .ant-table-tbody>tr {
+
+            td {
+                color: color.$black;
+                background: color.$light;
+                border-block: 1px solid color.$light-green-3;
+            }
+
+            td:first-child {
+                border-left: 1px solid color.$light-green-3;
+
+            }
+
+            td:last-child {
+                border-right: 1px solid color.$light-green-3;
+
+            }
+        }
+
+        // Antd Table Styling End
+
+
+        // project Info Styling Start
+        .projectInfoBody {
+            background: color.$light;
+            box-shadow: 0px 3px 25px color.$trans-black-2;
+            border: 1px solid color.$trans-gray;
+
+            .projectInfoLeftSection {
+                background-color: color.$white-9;
+
+                & h1 {
+                    color: color.$black-3;
+                }
+
+
+                .projectName {
+                    border-bottom: 1px solid color.$gray-2;
+
+                    & h1 {
+                        color: color.$black-2;
+                    }
+
+                    & p {
+                        color: color.$gary-p;
+                    }
+
+                }
+
+                .projectDetails {
+
+                    & tr {
+                        & td:first-child {
+                            color: color.$gray-3;
+                        }
+
+                        & td:last-child {
+                            color: color.$gary-p;
+
+                            & span {
+                                color: color.$dark-green-2;
+                            }
+                        }
+                    }
+                }
+
+                .projectMembers {
+                    & p {
+                        color: color.$light-purple-3;
+                    }
+
+                    .member-title {
+                        & p {
+                            color: color.$gary-p;
+                        }
+                    }
+                }
+            }
+
+            .projectInfoRightSection {
+                background: color.$white-6;
+            }
+
+        }
+        // project Info Styling End
+
+
+        // Ant Design Tabs Start
+        .card-container>.ant-tabs-card .ant-tabs-content>.ant-tabs-tabpane {
+            background: color.$light;
+        }
+
+        .card-container>.ant-tabs-card .ant-tabs-tab-active,
+        [data-theme='compact'] .card-container>.ant-tabs-card .ant-tabs-tab-active {
+            background: color.$light;
+            border-color: color.$light;
+        }
+
+        #components-tabs-demo-card-top .code-box-demo {
+            background: color.$white-5;
+        }
+
+        [data-theme='dark'] #components-tabs-demo-card-top .code-box-demo {
+            background: color.$black;
+        }
+
+        [data-theme='dark'] .card-container>.ant-tabs-card .ant-tabs-content>.ant-tabs-tabpane {
+            background: color.$black-4;
+        }
+
+        [data-theme='dark'] .card-container>.ant-tabs-card .ant-tabs-tab-active {
+            background: color.$black-4;
+            border-color: color.$black-4;
+        }
+
+        .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+            color: color.$gray;
+            border-bottom: 3px solid color.$light-blue-2;
+        }
+
+        // Ant Design Tabs End
+
+        // Profile Info start
+        .profileInfo {
+            .profileInfo-content {
+                & h1 {
+                    color: color.$black-2;
+                }
+
+                & p {
+                    color: color.$gary-p;
+                }
+            }
+        }
+
+        // Profile Info end
+
+        // Customer Profile Page
+        .customerProfile {
+
+            .customerRating {
+                & p:first-child {
+                    color: color.$black-2;
+                }
+            }
+        }
+
+        // Customer Profile Page
+    }
+
+    // Ant design Modal Styling
+    .ant-modal-close {
+        color: color.$light-gray-3;
+    }
+
+    .ant-modal-body {
+        background: color.$white-6;
+    }
+
+    .ant-modal-close:focus,
+    .ant-modal-close:hover {
+        color: color.$light;
+    }
+
+    .ModalBody {
+
+        .ModalLeftSec {
+            background: color.$white-9;
+            border: 1px solid color.$trans-gray-2;
+
+            & h1 {
+                color: color.$black;
+            }
+
+            .projectName {
+                border-bottom: 1px solid color.$gray-2;
+
+                & h1 {
+                    color: color.$blue-2;
+                }
+
+                & p {
+                    color: color.$gary-p;
+                }
+
+            }
+
+            .projectDetails {
+
+                & tr {
+                    & td:first-child {
+                        color: color.$gray-3;
+                    }
+
+                    & td:last-child {
+                        color: color.$gary-p;
+
+                        & span {
+                            color: color.$red;
+                        }
+                    }
+                }
+            }
+
+            .projectMembers {
+
+                & p {
+                    color: color.$light-purple-3;
+                }
+
+                .member-title {
+
+                    & p {
+                        color: color.$gary-p;
+                    }
+                }
+            }
+        }
+
+        .ModalMiddleSec {
+            & h1 {
+                color: color.$black;
+            }
+
+            & p {
+                color: color.$black;
+            }
+
+            .FilesDownloadSec {
+                border-top: 1px solid color.$gray-2;
+            }
+
+            .imgFormatSec {
+                .format {
+
+                    .formatContent p:last-child {
+                        color: color.$light-gray-5;
+                    }
+                }
+            }
+
+
+        }
+
+        .ModalRightSec {
+            background: color.$white-9;
+
+            .todo {
+                ul {
+                    & p {
+                        color: color.$gray-5;
+                        ;
+                    }
+
+                    & span {
+                        color: color.$gray-5;
+                        ;
+                    }
+                }
+            }
+        }
+    }
+
+    .InvoiceModalBody {
+
+        .ModalLeftSec {
+            background: color.$white-9;
+            border: 1px solid color.$trans-gray-2;
+
+            & h1 {
+                color: color.$black;
+            }
+
+            .projectName {
+                border-bottom: 1px solid color.$gray-2;
+
+                & h1 {
+                    color: color.$blue-2;
+                }
+
+                & p {
+                    color: color.$gary-p;
+                }
+
+            }
+
+            .projectDetails {
+
+                & tr {
+                    & td:first-child {
+                        color: color.$gray-3;
+                    }
+
+                    & td:last-child {
+                        color: color.$gary-p;
+
+                        & span {
+                            color: color.$red;
+                        }
+                    }
+                }
+            }
+
+            .InvoiceOptions {
+                 .InvoiceOptionsChild {
+                     background: color.$light;
+                     box-shadow: 0px 3px 6px color.$trans-black-2;
+                 }
+                 & span {
+                    color: color.$black;
+                 }
+             }
+        }
+
+        .ModalMiddleSec {
+            & h1 {
+                color: color.$black;
+            }
+
+            & p {
+                color: color.$black;
+            }
+            .projectDetails {
+                thead{
+                    background-color: color.$light-blue-5;
+                    color: color.$light;
+                }
+                tbody{
+                    tr{
+                        td{
+                            color: color.$black-5;
+                        }
+                    }
+                  
+                }
+            }
+            ul{
+                li{
+                    border-bottom: 0.15px solid color.$gray-6;
+                    p{
+                        color: color.$black-5;
+                    }
+                }
+                li:nth-child(2){
+                    p{
+                        color: color.$dark-green-3;
+                    }
+    
+                }
+                li:nth-child(4){
+                    p{
+                        color: color.$red-2;
+                    }
+    
+                }
+            }
+
+
+        }
+    }
+
+
+    // Ant design Modal Styling
+
+}
+
+// Light Theme End
+
+
+
+
+// Global Colors Start
+.open {
+    a {
+        color: color.$light;
+    }
+
+    .Logout h3,
+    .Logout p {
+        color: color.$light;
+    }
+
+    .Logout button.logout-btn {
+        color: color.$light;
+        background: color.$light-blue-2;
+        box-shadow: 0px 3px 58px (color.$light-blue-2);
+    }
+
+    .sidebar-list>li:hover:not(.has-dropdown) {
+        background-color: color.$light-blue;
+
+        .sidebar-img {
+            background-color: color.$Spiro-blue;
+        }
+    }
+
+    .sidebar-list a:hover,
+    .sidebar-list a.active {
+        background-color: rgba(color.$light-blue, 0.3);
+
+        & .sidebar-img:not(.has-dropdown .sidebar-img) {
+            background-color: #0DB1FF;
+        }
+    }
+}
+
+.close {
+    a {
+        color: color.$light;
+    }
+
+    .Logout h3,
+    .Logout p {
+        color: color.$light;
+    }
+
+    .Logout button.logout-btn {
+        color: color.$light;
+        background: color.$light-blue-2;
+    }
+
+    .sidebar-list>li:hover {
+        .sidebar-img {
+            background-color: color.$Spiro-blue;
+        }
+    }
+
+    .sidebar-list a:hover,
+    .sidebar-list a.active {
+
+        & .sidebar-img {
+            background-color: #0DB1FF;
+        }
+    }
+}
+
+
+.app-wrapper {
+
+    .products-charts-child1 {
+        border: .5px solid (color.$light-purple-2);
+    }
+
+    .products-charts-child1:nth-child(2) {
+        border: .5px solid (color.$light-orange);
+
+        .products-charts-child2 {
+            border: 3px solid (color.$light-orange);
+        }
+
+        .products-charts-child3 {
+            border: .5px solid (color.$light-orange);
+
+            & h1 {
+                color: color.$light-orange;
+            }
+        }
+    }
+
+    .products-charts-child1:nth-child(3) {
+        border: .5px solid (color.$light-green);
+
+        .products-charts-child2 {
+            border: 3px solid (color.$light-green);
+        }
+
+        .products-charts-child3 {
+            border: .5px solid (color.$light-green);
+
+            & h1 {
+                color: color.$light-green;
+            }
+        }
+    }
+
+    .products-charts-child1:nth-child(4) {
+        border: .5px solid (color.$light-pink);
+        margin-left: 33px;
+
+        .products-charts-child2 {
+            border: 3px solid (color.$light-pink);
+        }
+
+        .products-charts-child3 {
+            border: .5px solid (color.$light-pink);
+
+            & h1 {
+                color: color.$light-pink;
+            }
+        }
+
+    }
+
+    .products-charts-child1:nth-child(5) {
+        border: .5px solid (color.$light-purple);
+
+        .products-charts-child2 {
+            border: 3px solid (color.$light-purple);
+        }
+
+        .products-charts-child3 {
+            border: .5px solid (color.$light-purple);
+
+            & h1 {
+                color: color.$light-purple;
+            }
+        }
+
+    }
+
+    .products-charts-child2 {
+        border: 3px solid (color.$light-purple-2);
+    }
+
+    .products-charts-child3 {
+        border: .5px solid (color.$light-purple-2);
+    }
+
+    .products-charts-child3 h1 {
+        color: color.$light-purple-2;
+    }
+
+    .responsive-table {
+
+        button.status-primary-btn {
+            background-color: color.$blue;
+            color: color.$light;
+        }
+
+        button.status-warning-btn {
+            background-color: color.$orange;
+            color: color.$light;
+        }
+
+    }
+
+    .monthly-chart-parent h1:last-child {
+        border: 1px solid (color.$light-green-3);
+    }
+
+    .monthly-chart-parent h1 span {
+        color: color.$green;
+    }
+
+    // Customer Inner Body Start
+    .InnerBodyContent {
+
+        .customers:nth-child(1) {
+
+            & h1 {
+                color: color.$Spiro-blue;
+            }
+        }
+
+        .customers:nth-child(2) {
+
+
+            & h1 {
+                color: color.$dark-green;
+            }
+        }
+
+        .customers:nth-child(3) {
+
+
+            & h1 {
+                color: color.$red;
+            }
+        }
+
+
+        .projects-image {
+
+            .projectImageInner:nth-child(1) {
+
+
+                .projectInnerContent {
+
+                    span {
+
+                        color: color.$purple-2;
+                    }
+
+                    p {
+
+                        color: color.$purple-2;
+                    }
+                }
+            }
+
+            .projectImageInner:nth-child(2) {
+
+
+                .projectInnerContent {
+
+
+                    span {
+
+                        color: color.$purple-2;
+                    }
+
+                    p {
+
+                        color: color.$purple-2;
+                    }
+                }
+            }
+
+            .projectImageInner:nth-child(3) {
+
+                .projectInnerContent {
+
+                    span {
+                        color: color.$light-blue-3;
+                    }
+
+                    p {
+                        color: color.$light-blue-3;
+                    }
+                }
+            }
+
+            .projectImageInner:nth-child(4) {
+
+                .projectInnerContent {
+
+
+                    span {
+
+                        color: color.$light-blue-3;
+                    }
+
+                    p {
+
+                        color: color.$light-blue-3;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    // Customer Inner Body End
+
+
+    // Antd Table Styling Start
+
+    .ant-table-thead>tr {
+        th {
+            color: color.$gray;
+        }
+    }
+
+    .ant-table-tbody>tr {
+
+        td {
+            color: color.$black;
+            background: color.$light;
+            border-block: 1px solid color.$light-green-3;
+        }
+
+        td:first-child {
+            border-left: 1px solid color.$light-green-3;
+
+        }
+
+        td:last-child {
+            border-right: 1px solid color.$light-green-3;
+
+        }
+    }
+
+
+    .ActiveBtn {
+        color: color.$dark-green;
+        background-color: color.$light-green-2;
+        border: 1px solid color.$white-4;
+    }
+
+    .editbtn {
+        background: color.$Spiro-blue;
+    }
+
+    .deletebtn {
+        background: color.$red;
+    }
+
+    .vline {
+        border-left: 2px solid color.$gray;
+    }
+
+    // Antd Table Styling End
+
+    // Customer Profile Page
+    .customerProfile {
+
+        .customerRating {
+
+            & p:last-child {
+                color: color.$gary-p;
+                background: color.$white-10;
+            }
+        }
+    }
+
+    // Customer Profile Page
+
+}
+
+// Primary Button
+.primaryBtn {
+    background: color.$light-blue-2;
+    border: 1px solid color.$light-blue-2;
+    box-shadow: 0px 3px 6px color.$trans-black;
+    color: color.$light;
+}
+
+// Primary Button
+
+
+// secondary Button
+.secondaryBtn {
+    background: color.$light-gray-4;
+    border: 1px solid color.$light-gray-4;
+    box-shadow: 0px 3px 6px color.$trans-black;
+    color: color.$light;
+}
+
+// secondary Button
+
+// success Button
+.successBtn {
+    background: color.$dark-green-3;
+    border: 1px solid color.$dark-green-3;
+    color: color.$light;
+}
+
+// success Button
+
+// danger Button
+.dangerBtn {
+    background: color.$red;
+    border: 1px solid color.$red;
+    color: color.$light;
+}
+
+// danger Button
+
+.ModalLeftSec{
+    .ticketInfo{
+        color: color.$red;
+    }
+}
+
+// Midle Section Content start
+.ModalMiddleSecContent {
+
+    & p {
+        color: color.$light;
+    }
+
+}
+
+// Middle Section Content End
+
+// Midle Section Content 2 start
+.ModalMiddleSecContent2 {
+
+    & p {
+        color: color.$light;
+    }
+
+}
+
+// Middle Section Content 2 End
+
+// Modal Middle Sectiion Download File Section  Start
+.imgFormatSec {
+    .format {
+
+        .formatImg {
+            background-color: color.$gray-4;
+
+            & p {
+                color: color.$light;
+            }
+        }
+
+        .formatContent p:first-child {
+            color: color.$light-blue-4;
+        }
+
+    }
+}
+
+// Modal Middle Sectiion Download File Section  End
+
+// Todo App Start
+.todo {
+    ul {
+        li.todo-list {
+            background-color: color.$white-8;
+            color: color.$gray-5;
+            ;
+        }
+    }
+
+    .todoChild {
+
+        .ant-input-affix-wrapper {
+            background: color.$white-7;
+
+            input[type=text] {
+                background: color.$white-7;
+            }
+
+        }
+
+        .primaryBtn {
+            background: color.$blue;
+            border-color: color.$blue;
+        }
+
+    }
+}
+// Todo App End
+
+
+// Outline Danger Button
+.OutlineDangerBtn {
+    border: 2px solid color.$red-2;
+    color: color.$red-2;
+    background-color: color.$light;
+}
+// Outline Danger Button
+
+
+// Global Colors End

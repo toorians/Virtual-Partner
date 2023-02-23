@@ -1,0 +1,326 @@
+// Navbar Close Start
+.close{
+    position: relative;
+    max-width: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+   .logo {
+        margin-bottom: 63px;
+        width: 233px;
+    }
+    .sidebar-list {
+        width: 100%;
+        margin-bottom: calc(74.76px - 15px);
+        overflow: auto;
+        height: 100%;
+    }
+    .sidebar-list > li {
+        margin-bottom: 15px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .sidebar-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar-img {
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .sidebar-img img {
+        margin-bottom: 0;
+        width: 21px;
+        height: 21px;
+    }
+
+    .sidebar-items span {
+        display: none;
+    }
+
+    .sidebar-img:hover{
+        img {
+            transform: scale(1.2);
+            filter: brightness(2);
+        }
+    }
+    .logout-parent {
+        width: 100%;
+        margin-bottom: 22.5px;
+    
+    }
+    .style-dropdown{
+        margin: 10px;
+        padding: 10px 0 20px;
+        background: #3C3F44;
+        border-radius: 12px;
+        display: none;
+    }
+    .Logout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .Logout-img {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            margin-bottom: 12px;
+            position: relative;
+        }
+    
+        .Logout-img::after {
+            content: '';
+            background-image: url('../../assets/images/svgs/active.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            right: 0;
+            top: 70%;
+            width: 14px;
+            height: 15px;
+        }
+    
+        .Logout-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+    
+        & h3 {
+            display: none;
+        }
+    
+        & p {
+            display: none;
+        }
+    
+        button.logout-btn {
+            border: none;
+            padding: 6.7px 21.21px;
+            border-radius: 30px;
+            opacity: 1;
+            font-size: 10px;
+            cursor: pointer;
+        }
+    
+    }
+    .toggler-icon {
+       & img {
+        cursor: pointer;
+        margin-right: 10px;
+        transform: rotate(180deg);
+    }
+    }
+}
+// Navbar Close End
+
+
+
+// Navbar Open   Start
+.open {
+    position: relative;
+    max-width: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width:333px;
+    height: 100%;
+  
+    .logo {
+        margin-bottom: 63px;
+    }
+
+    .sidebar-list {
+        width: 100%;
+        margin-bottom: calc(74.76px - 15px);
+        margin-right: 10px;
+        height: 360px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 2px;
+          }
+          
+          /* Track */
+          &::-webkit-scrollbar-track {
+            background:transparent; 
+            margin-block: 30px;
+    
+          }
+           
+          /* Handle */
+          &::-webkit-scrollbar-thumb {
+            background:#ffffff; 
+          }
+    }
+
+    .sidebar-list > li {
+        margin-bottom: 15px;
+        transition: .5s;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .sidebar-items {
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-img {
+        transition: .5s;
+        margin-right: 8.68px;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .sidebar-img img {
+        margin-bottom: 0;
+        transition: .5s all ease-in-out;
+    }
+
+    .sidebar-items span {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .sidebar-list li:hover:not(.has-dropdown, .has-dropdown li),.sidebar-list li a.active:not(.has-dropdown, .has-dropdown li) {
+        .sidebar-img img {
+            transform: scale(1.2);
+            filter: brightness(2);
+        }
+    }
+
+
+
+.logout-parent {
+    width: 100%;
+    margin-bottom: 22.5px;
+
+}
+
+
+
+.has-dropdown{
+    .drodown-icon{
+        margin-left: 13px;
+        font-size: 17px;
+        position: relative;
+        top: 2px;
+        transition: .3s;
+    }
+    .drodown-icon.reversed{
+        transform: rotate(180deg);
+    }
+
+}
+
+.style-dropdown{
+    margin: 10px;
+    padding: 10px 0 20px;
+    background: #3C3F44;
+    border-radius: 12px;
+    display: none;
+    transition: .3s;
+}
+.has-dropdown.active{
+    .style-dropdown{
+        display: block;
+    }
+}
+.Logout {
+    width: 232px;
+    height: 260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    background: #ffffff21;
+    position: relative;
+    backdrop-filter: blur(37px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    opacity: 1;
+
+    .Logout-img {
+        width: 93px;
+        height: 93px;
+        border-radius: 50%;
+        margin-bottom: 12px;
+        position: relative;
+    }
+
+    .Logout-img::after {
+        content: '';
+        background-image: url('../../assets/images/svgs/active.svg');
+        position: absolute;
+        right: 0;
+        top: 70%;
+        width: 22px;
+        height: 23px;
+    }
+
+    .Logout-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+
+    & h3 {
+        font-size: 17px;
+    }
+
+    & p {
+        font-size: 15px;
+        padding-bottom: 22px;
+    }
+
+    button.logout-btn {
+        border: none;
+        padding: 6.6px 22.5px;
+        border-radius: 30px;
+        opacity: 1;
+        font-size: 10px;
+        cursor: pointer;
+    }
+
+}
+.style-dropdown li{
+    // padding: 8px 0 8px 15px ;
+    .sidebar-img{
+        padding: 10px;
+
+
+        img{
+            width: 25px;
+            height: 25px;
+            // margin-right: 18px;
+        }
+    } 
+}
+.toggler-icon img {
+    cursor: pointer;
+    margin-right: 10px;
+}
+}
+.sidebar-list a{
+    display: inline-block;
+    width: 100%;
+}
+.sidebar-list a:hover:not(.has-dropdown .sidebar-items) , .sidebar-list a.active:not(.has-dropdown .sidebar-items){
+    border-radius: 10px 0 0 10px;
+}
+
+// Navbar Open End

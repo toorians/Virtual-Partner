@@ -1,0 +1,30 @@
+.app-header{
+    margin-bottom: 24px;
+
+    li{
+        margin-right: 15.4px;
+    }
+    .style-input{
+        margin-right: 69.2px;
+
+        overflow: hidden;
+        max-width: 240px ;
+        width: 100%;
+        position: relative;
+        input{
+            height: 38px;
+            border-radius: 50px;
+
+        }
+    
+        svg{
+            position: absolute;
+            right: 12px;
+            top: 8px;
+            font-size: 20px;
+        }
+    }
+    .swicth-button{
+        margin-left: 62px;
+    }
+}
